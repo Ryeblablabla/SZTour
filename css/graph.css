@@ -1,0 +1,89 @@
+body {
+	background-color: #555566;
+	padding: 30px 40px;
+	text-align: center;
+		font-family: OpenSans-Light, PingFang SC, Hiragino Sans GB, Microsoft Yahei, Microsoft Jhenghei, sans-serif;
+}
+#indicator {
+	position: absolute; 
+	left: 60px;
+	bottom: 20px;
+		text-align: left;
+		color: #f2f2f2;
+		font-size: 12px;
+}
+
+#indicator>div {
+		margin-bottom: 4px;
+}
+
+#indicator span {
+		display: inline-block;
+		width: 30px;
+		height: 14px;
+		position: relative;
+		top: 2px;
+		margin-right: 8px;
+}
+/*设置节点及边的样式*/
+.links line {
+	stroke: rgb(240, 240, 240); 
+	stroke-opactity: 0.2;
+}
+.links line.inactive {
+		/*display: none !important;*/
+		stroke-opacity: 0.3;
+}
+.nodes circle {
+	stroke: #fff;
+	stroke-width: 1.5px;
+}
+.nodes circle:hover {
+		cursor: pointer;
+}
+.nodes circle.inactive {
+	/* display: none !important; */
+	opacity: 0.3;
+}
+.texts text {
+		display: true;
+}
+.texts text:hover {
+		cursor: pointer;
+}
+.texts text.inactive {
+		/* display: none !important; */
+		opacity: 0.3;
+}
+.linksTexts text {
+		display: true;
+}
+.linksTexts text:hover {
+		cursor: pointer;
+}
+.linksTexts text.inactive {
+		/* display: none !important; */
+		opacity: 0.3;
+}
+
+/*悬浮节点的info样式*/
+#info {
+		position: absolute;
+		bottom: 40px;
+		right: 30px;
+		text-align: right;
+		width: 270px;
+}
+#info p {
+		color: #fff;
+		font-size: 12px;
+		margin-top: 0;
+		margin-bottom: 5px;
+}
+#info p span {
+		color: #888;
+		margin-right: 10px;
+}
+#info h4 {
+		color: #fff;
+}
